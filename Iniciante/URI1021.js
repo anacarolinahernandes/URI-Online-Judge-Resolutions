@@ -1,12 +1,12 @@
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
 
-const valor = parseFloat(lines.shift());
+const valor = lines.shift();
 
 const notas = [100, 50, 20, 10, 5, 2];
 const moedas = [1.0, 0.5, 0.25, 0.1, 0.05, 0.01];
 
-let n = valor;
+let n = parseFloat(valor);
 
 console.log("NOTAS:");
 
@@ -19,5 +19,5 @@ console.log("MOEDAS:");
 
 moedas.forEach(moeda => {
   console.log(`${parseInt(n / moeda)} moeda(s) de R$ ${moeda.toFixed(2)}`);
-  n %= moeda;
+  n = (n % moeda) + 0.00001;
 });
