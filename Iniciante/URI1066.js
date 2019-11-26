@@ -1,3 +1,5 @@
+/* Pares, Ímpares, Positivos e Negativos */
+
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
 
@@ -16,4 +18,3 @@ console.log(`${pares.length} valor(es) par(es)`);
 console.log(`${valores.length - pares.length} valor(es) impar(es)`);
 console.log(`${positivos.length} valor(es) positivo(s)`);
 console.log(`${semZero.length - positivos.length} valor(es) negativo(s)`);
-
