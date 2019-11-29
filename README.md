@@ -1,3 +1,4 @@
-# URI Online Judge Resolution
+# URI Online Judge Resolutions
 
-Resolução em JavaScript dos desafios propostos no [URI Online Judge](https://www.urionlinejudge.com.br).
+Repositório com as minhas resoluções dos desafios propostos no [URI Online Judge](https://www.urionlinejudge.com.br).
+Linguagem utilizada: **JavaScript**
